@@ -1,0 +1,12 @@
+vm:
+  memory: 1536
+  cpus: 1
+  name: seostat-backend
+system:
+  swapsize: 1024
+  timezone: UTC
+network:
+  type: private_network
+  ip: 192.168.33.10
+github:
+  token: <your-github-api-token>

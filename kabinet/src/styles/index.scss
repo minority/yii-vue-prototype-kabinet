@@ -1,0 +1,73 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Helvetica Neue',Helvetica,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',SimSun,sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content {
+  background-color: rgba(16, 24, 40, 0.03);
+  color: #333;
+  padding: 20px 20px 50px;
+}
+
+.table {
+  margin-top: 20px;
+}
+
+.query-form {
+  margin-top: 20px;
+  padding-top: 25px;
+  background-color: #e0e1e2;
+  border-radius: 3px;
+}
+
+.content-block {
+  margin-top: 30px;
+}
+
+.success-block {
+  text-align: center;
+  width: 100%;
+  padding: 25px 0;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.hidden {
+  display: none;
+}
+
+.mt-25 {
+  margin-top: 25px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.center {
+  text-align: center;
+}
