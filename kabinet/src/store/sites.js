@@ -56,6 +56,11 @@ export default {
         const data = await api('post', 'v1/site/update', payload)
         commit('setLoading', false)
 
+        if (data.status && data.item) {
+          commit('updateSite', data.item)
+          commit('setNotify', 'Запись была обновлена')
+        }
+
         return data
       } catch (e) {
         commit('setError', 'Произошла ошибка отправки данных, попробуйте позже или обратитесь к администратору системы')

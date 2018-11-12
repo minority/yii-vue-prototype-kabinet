@@ -9,7 +9,7 @@
         <el-row :gutter="20">
             <el-col :span="12" :xs="24" :sm="20" :md="16" :lg="12" :xl="12">
                 <div class="content-block">
-                    <el-form class="mt-25" :rules="rules" ref="updateForm" label-position="left" label-width="175px" :model="formData">
+                    <el-form class="mt-25" :rules="rules" ref="updateForm" label-position="left" label-width="190px" :model="formData">
                         <el-form-item label="Краткое наименование" prop="name">
                             <el-input placeholder="Мой блог про домашних животных" v-model="formData.name"></el-input>
                         </el-form-item>
@@ -165,11 +165,7 @@ export default {
           const response = this.$store.dispatch('updateSite', this.formData)
           response.then(data => {
             if (data.status) {
-              if (data.item) {
-                this.$store.commit('updateSite', data.item)
-                this.$store.commit('setNotify', 'Запись была обновлена')
-                this.$router.push({name: 'SitesIndex'})
-              }
+              this.$router.push({name: 'SitesIndex'})
             } else {
               this.showMessage('Ошибка отправки формы', data.msg)
             }
