@@ -15,7 +15,7 @@
                         <el-step title="Данные расходов"></el-step>
                     </el-steps>
 
-                    <el-form class="mt-50" :rules="rules" ref="addForm" label-position="left" label-width="175px" :model="formData">
+                    <el-form class="mt-50" :rules="rules" ref="addForm" label-position="left" label-width="190px" :model="formData">
                         <div v-show="active === 0" class="content-block">
                             <el-form-item label="Адрес сайта" prop="url">
                                 <el-input placeholder="http://mysite.ru" v-model="formData.url"></el-input>
